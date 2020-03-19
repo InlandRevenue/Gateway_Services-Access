@@ -9,8 +9,9 @@ Key Features:
 
 * [View and download the Identity and Access Services Build Pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) for details on 
 	- the token auth implementation using OAuth 2.0
-	- desktop (native) application token auth 
-	- SSH Keys
+	- desktop (native) application token auth
+	- Self-sign JWT M2M authentication 	
+	- SSH/PGP Keys 
 
 * OAuth Authentication - [How to Integrate](OAuth%20Authentication%20-%20How%20to%20Integrate.md)
 	- Simulating Authentication Flow
