@@ -1,39 +1,120 @@
 ![IRD logo](../../Images/IRlogo.gif)
 ![Software Dev](../../Images/SoftwareDev.png)
 
-Identity and Access Services
-=======================================
+# Identity and Access Services
 
-Key Features:
--------------
+We provide 3 authentication options to access our with gateway services
 
-* [View and download the Identity and Access Services Build Pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) for details on 
+#### OAuth2 Authentication
+This authentication option is a authorisation token implementation using OAuth 2.0. Both cloud or native (desktop) application options 
+are enforced for client applications and authenticate end users using their myIR user ID and password to grant consent to the application 
+access to their Inland Revenue information.
+
+#### Machine-to-Machine (M2M) authentication/Self-Signed JWT
+This authentication option uses a client signed JSON Web Token (JWT) to sign messages, which lets us identify the service provider 
+or a customer of a service provider. 
+
+M2M authentication is only available for service providers integrating through cloud services.
+
+#### SSH authentication
+This authentication option requires a service provider to supply their public PGP key for file encryption. We supply our public SSH key in order to gain access to the service provider FTP server.
+
+SSH authentication is only available for service providers integrating through Secure File Transfer Service SFTP.
+
+## Key Documentation 
+
+[View and download the Identity and Access Services Build Pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) for details on 
 	- the token auth implementation using OAuth 2.0
 	- desktop (native) application token auth
 	- Self-sign JWT M2M authentication 	
 	- SSH/PGP Keys 
 
-* OAuth Authentication - [How to Integrate](OAuth%20Authentication%20-%20How%20to%20Integrate.md)
-	- Simulating Authentication Flow
-	- Full Authentication Steps
+### Oauth2 Authentication
 
-* [Message Samples](Message%20Samples.md) - OAuth requests and responses provided for
-    - URL EndPoint Parameter 
-	- Request Authorisation Code
-	- Exchange Authorisation Code for an Authorisation Token
-	- Request Refresh Token
-	- Validate Access Token
-	- Revoke Token Request
-	- Error response
+* [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
+* [Samples messages](./Message%20Samples.md) - requests and responses
+* [Managing myIR logons for gateway services](https://www.ird.govt.nz/software-providers/docs/managing/)
+* [Manage access tokens for gateway services]()
 	
-* [View guide to managing myIR logon and gateway services access tokens](https://www.ird.govt.nz/software-providers/docs/managing/) on IR website
+## Available authentication options for gateway services
 
-## Related Products: 
+<table>
+	<thead>
+		<th>Service</th>
+		<th>OAuth2</th>
+		<th>M2M/JWT</th>
+		<th>SSH</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td  style="background-color:lightgrey" colspan=4> <strong>Returns and Information</strong></td>	
+		</tr>
+		<tr>
+			<td>Accounting income method (AIM)</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
+		<tr>
+			<td>Goods and services tax (GST)</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>	
+		<tr>
+			<td>Donation tax credits</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
+		<tr>
+			<td>Income Tax</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>	
+		<tr>
+			<td>Investment income reporting</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
+		<tr>
+			<td>Payday filing</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>		
+		<tr>
+			<td>Push notifications</td><td>No</td><td>No</td><td>Yes</td>
+		</tr>	
+		<tr>
+			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong></td>	
+		</tr>	
+		<tr>
+			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>	
+		<tr>
+			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
+		</tr>	
+		<tr>
+			<td  style="background-color:lightgrey" colspan=4> <strong>Communication</strong></td>	
+		</tr>
+		<tr>
+			<td>Document service</td><td>Yes</td><td>Yes</td><td>No</td>
+		</tr>	
+				<tr>
+			<td>Notifications service</td><td>Yes</td><td>Yes</td><td>No</td>
+		</tr>	
+		<tr>
+			<td style="background-color:lightgrey" colspan=4> <strong>Calculators</strong></td>	
+		</tr>	
+		<tr>
+			<td>Prescribed investor rate (PIR) calculator</td><td>Yes</td><td>Yes</td><td>No</td>
+		</tr>
+				<tr>
+			<td  style="background-color:lightgrey" colspan=4> <strong>Access</strong></td>	
+		</tr>	
+				<tr>
+			<td>Intermediation Service</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
+				<tr>
+			<td>Software intermediation</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>	
+				<tr>
+			<td  style="background-color:lightgrey" colspan=4> <strong>Transaction data services</strong></td>	
+		</tr>
+				<tr>
+			<td>Transaction Data Services (SOAP)</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>		
+						<tr>
+			<td>Transaction data services (Secure FTP)</td><td>No</td><td>No</td><td>Yes</td>
+		</tr>
+	</tbody>
+</table>
 
-* Product - Accounting Income Method (AIM) - [Statement Filing SDK and build pack](../../Product%20-%20AIM/)
-* Product - Goods and Services Tax (GST) - [Return Filing SDK and build pack](../../Product%20-%20GST/)
-* Product - Investment Income Reporting - view the [Investment Income Reporting tax products SDKs and build packs](../../Product%20-%20Investment%20Income%20Reporting/)
-* Product - Payday Filing - view the [Employment Information and Employee details SDKs and build packs](../../Product%20-%20Payday%20Filing/)
-* Product - Transaction Data Services (TDS) - view the [SDKs and build packs](../../Product%20-%20Transaction%20Data%20Services/)
+
 
 	
