@@ -26,8 +26,8 @@ SSH authentication is only available for service providers integrating through S
 
 * [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
 * [Samples messages](./Message%20Samples.md) - requests and responses
-* [Managing myIR logons for gateway services](https://www.ird.govt.nz/software-providers/docs/managing/)
-* [Manage access tokens for gateway services]()
+* [Managing myIR logons for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/managing-myir-logons-for-gateway-services)
+* [Manage access tokens for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/manage-access-tokens-for-gateway-services)
 	
 ## Available authentication options for gateway services
 
