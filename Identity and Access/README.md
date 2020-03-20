@@ -1,5 +1,5 @@
-![IRD logo](../../Images/IRlogo.gif)
-![Software Dev](../../Images/SoftwareDev.png)
+![IRD logo](../Images/IRlogo.gif)
+![Software Dev](../Images/SoftwareDev.png)
 
 # Identity and Access Services
 
@@ -14,7 +14,7 @@ access to their Inland Revenue information.
 This authentication option uses a client signed JSON Web Token (JWT) to sign messages, which lets us identify the service provider 
 or a customer of a service provider. 
 
-M2M authentication is only available for service providers integrating through cloud services.
+> M2M authentication is only available for service providers integrating through cloud services.
 
 #### SSH authentication
 This authentication option requires a service provider to supply their public PGP key for file encryption. We supply our public SSH key in order to gain access to the service provider FTP server.
