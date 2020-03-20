@@ -23,13 +23,6 @@ SSH authentication is only available for service providers integrating through S
 
 ## Key Documentation 
 
-[View and download the Identity and Access Services Build Pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) for details on 
-	- the token auth implementation using OAuth 2.0
-	- desktop (native) application token auth
-	- Self-sign JWT M2M authentication 	
-	- SSH/PGP Keys 
-
-### Oauth2 Authentication
 
 * [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
 * [Samples messages](./Message%20Samples.md) - requests and responses
