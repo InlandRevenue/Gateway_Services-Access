@@ -1,5 +1,5 @@
-![IRD logo](../../Images/IRlogo.gif)
-![Software Dev](../../Images/SoftwareDev.png)
+![IRD logo](../Images/IRlogo.gif)
+![Software Dev](../Images/SoftwareDev.png)
 
 # OAuth Authentication - How to Integrate
 
@@ -46,7 +46,7 @@ Customer accesses the Client Application via a web browser. They take an action 
 The Client Application invokes the OAuth Server to get Authorisation code, the customer's browser is redirected to myIR login page. The service provider needs to send a ```HTTP GET``` request via the Browser request to OAuth Server. See [Authorisation Code Message Sample](Message%20Samples.md#RequestAuthorisationCode)
 
 ### Step 3. Submit Login Credentials
-User submits myIR Usernname & Password and authorise consent via the user's web browser.
+User submits myIR Username & Password and authorise consent via the user's web browser.
 
 >Note: 
 >
