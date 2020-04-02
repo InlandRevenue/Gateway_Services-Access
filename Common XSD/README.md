@@ -5,5 +5,5 @@
 
 | XSD | Service | 
 | --- | --- |
-| * Common.v1.xsd | * Payday Filing v1 <br/> * GST * Software Intermediation| 
-| * Common.v2.xsd | * Payday Filing v2 <br/> * AIM v2 <br/> * Income Tax <br/> * Investment Income Reporting * Intermediation |
+| * Common.v1.xsd | * Payday Filing v1 <br/> * GST <br/> * Software Intermediation| 
+| * Common.v2.xsd | * Payday Filing v2 <br/> * AIM v2 <br/> * Income Tax <br/> * Investment Income Reporting <br/> * Intermediation |
