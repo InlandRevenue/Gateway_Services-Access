@@ -12,7 +12,7 @@ The Software Intermediation service allows these links to be established, querie
 There is a separate Intermediation service that addresses the links between business intermediaries like tax agents and their client lists and their customer accounts. 
 The actual dataset resulting in bulk files from a software intermediation link will be impacted by those intermediation links but the links themselves are maintained separately. 
 
-[View the TDS Overview](../Product%20-%20Transaction%20Data%20Services/TDS%20Overview%20and%20Transition) to find out more details. 
+[View the TDS Overview](https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services) to find out more details. 
 
 Key Features:
 -------------
@@ -25,13 +25,13 @@ Key Features:
 	
 Supporting schema
 -------------
-* [view Common schema](../Schema%20-%20Common/Common.v1.xsd)
+* [view Common v1 XSD](../Common%20XSD/Common.v1.xsd)
 
 Products using this service:
 -------------
-* [Transaction Data Services](../Product%20-%20Transaction%20Data%20Services)
+* [Transaction Data Services](https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services)
 
 Supporting services
 -------------
-* [Service - Identity and Access](../Service%20-%20Identity%20and%20Access/)
+* [Identity and Access](../Identity%20and%20Access/)
 * [Service - Intermediation](../Service%20-%20Intermediation)
