@@ -14,7 +14,7 @@ The Intermediation Gateway Service provides the ability for intermediaries to:
 ## Key Documentation:
 
 - Schemas and WSDLs:
-	- View and download the [Common v2 xsd](../Schema%20-%20Common/Common.v2.xsd)
+	- View and download the [Common v2 xsd](../Common%20XSD/Common.v2.xsd)
 	- View and download the Intermediation [XSD](Latest/Intermediation.v1.xsd) and [WSDL](Latest/IntermediationDevWsdl.v1.wsdl)
 	
 - Intermediation Service 

@@ -25,11 +25,11 @@ Key Features:
 	
 Supporting schema
 -------------
-* [view Common schema](../Schema%20-%20Common/Common.v1.xsd)
+* [view Common schema](../Common%20XSD/Common.v1.xsd)
 
 Products using this service:
 -------------
-* [Transaction Data Services](../Product%20-%20Transaction%20Data%20Services)
+* [Transaction Data Services](https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services)
 
 Supporting services
 -------------
