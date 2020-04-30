@@ -31,6 +31,8 @@ SSH authentication is only available for service providers integrating through S
 	
 ## Available authentication options for gateway services
 
+M2M/JWT authentication is only available for service providers integrating through cloud services **and for some selected services as described in the table below**.
+
 <table>
 	<thead>
 		<th>Service</th>
