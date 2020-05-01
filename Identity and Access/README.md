@@ -42,7 +42,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 	</thead>
 	<tbody>
 		<tr>
-			<td  style="background-color:lightgrey" colspan=4> <strong>Returns and Information</strong></td>	
+			<td  style="background-color:lightgrey" colspan=4> <strong>Returns and Information</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Returns-and-Information)</td>	
 		</tr>
 		<tr>
 			<td>Accounting income method (AIM)</td><td>Yes</td><td>No</td><td>No</td>
@@ -66,7 +66,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td>Push notifications</td><td>No</td><td>No</td><td>Yes</td>
 		</tr>	
 		<tr>
-			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong></td>	
+			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account)</td>	
 		</tr>	
 		<tr>
 			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
@@ -75,7 +75,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
-			<td  style="background-color:lightgrey" colspan=4> <strong>Communication</strong></td>	
+			<td  style="background-color:lightgrey" colspan=4> <strong>Communication</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Communication)</td>	
 		</tr>
 		<tr>
 			<td>Document service</td><td>Yes</td><td>Yes</td><td>No</td>
@@ -84,13 +84,13 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td>Notifications service</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
-			<td style="background-color:lightgrey" colspan=4> <strong>Calculators</strong></td>	
+			<td style="background-color:lightgrey" colspan=4> <strong>Calculators</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Calculators)</td>	
 		</tr>	
 		<tr>
 			<td>Prescribed investor rate (PIR) calculator</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>
 				<tr>
-			<td  style="background-color:lightgrey" colspan=4> <strong>Access</strong></td>	
+			<td  style="background-color:lightgrey" colspan=4> <strong>Access</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Access)</td>	
 		</tr>	
 				<tr>
 			<td>Intermediation Service</td><td>Yes</td><td>No</td><td>No</td>
@@ -99,7 +99,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td>Software intermediation</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 				<tr>
-			<td  style="background-color:lightgrey" colspan=4> <strong>Transaction data services</strong></td>	
+			<td  style="background-color:lightgrey" colspan=4> <strong>Transaction data services</strong> - [view services in this repository](https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services)</td>	
 		</tr>
 				<tr>
 			<td>Transaction Data Services (SOAP)</td><td>Yes</td><td>No</td><td>No</td>
