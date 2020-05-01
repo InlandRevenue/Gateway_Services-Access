@@ -6,8 +6,7 @@
 #### Latest Release: v 2.2 30/04/20
 
 Archives
-* [V2.0 ](./Archive/20200402%20v2.01)
-* [V1.0 ](./Archive/20180413%20v1.0)
+* [V2.0 ](./Archive/20200402%20v2.01) | [V1.0 ](./Archive/20180413%20v1.0)
 
 ## About the service
 
