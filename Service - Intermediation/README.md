@@ -29,12 +29,12 @@ The following key changes have been made to the Intermediation service build pac
 - section 3.2 Noted: It is worth noting that any existing EQU or ERA accounts will be automatically linked when linking to a client’s income tax account.
 - section 4.3 Removed references to development WSDLs
 
-#### Build pack updates v 2.1 released 11/03/20
+#### Build pack updates v 21 released 11/03/20
 - section 1.4 Note added to table of TLS requirements: " The same certificate cannot be used for the Test and Production environments.
 - section 2.4 Information regarding TLS1.3 added
 - new section 2.6 added for Delegated authority
+- new section 2.7 added Active account types with 2 new account types - RDI and RUL
 - sections 3.1, 3.4 Added “All links returned by this operation will be active links but the account they are linked to may be ceased.”
-- section 2.7 New section added: Active account types RDI and RUL
 
 --------------------
 ## Key documentation
