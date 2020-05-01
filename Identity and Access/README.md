@@ -1,11 +1,11 @@
 ![IRD logo](../Images/IRlogo.gif)
 ![Software Dev](../Images/SoftwareDev.png)
 
-# Identity and Access Services
+# Identity and access services
 
-We provide 3 authentication options to access our with gateway services and secure file transfer services
+We provide 3 authentication options to access our with gateway services and secure file transfer services.
 
-#### OAuth2 Authentication
+#### OAuth2 authentication
 This authentication option is a authorisation token implementation using OAuth 2.0. Both cloud or native (desktop) application options 
 are enforced for client applications and authenticate end users using their myIR user ID and password to grant consent to the application 
 access to their Inland Revenue information.
@@ -19,20 +19,20 @@ or a customer of a service provider.
 #### SSH authentication / PGP Key
 This authentication option requires a service provider to supply their public PGP key for file encryption. We supply our public SSH key in order to gain access to the service provider FTP server.
 
-SSH authentication is only available for service providers integrating through Secure File Transfer Service SFTP.
+> SSH authentication is only available for service providers integrating through a secure file transfer (SFTP) service.
 
 ---------------
-## Key Documentation 
+## Key documentation 
 
 - Build pack 
 	- [Download the Identity and Access  build pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) to view authorisation and authentication details for the OAuth, M2M/JWT and SSH/PGP authorisation types
 	
-#### OAuth2 Authentication
+#### OAuth2 authentication
 * [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
 * [Samples messages](./Message%20Samples.md) - requests and responses
 * [Managing myIR logons for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/managing-myir-logons-for-gateway-services)
 
-#### OAuth2 and M2M Authentication	
+#### OAuth2 and M2M authentication	
 * [Manage access tokens for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/manage-access-tokens-for-gateway-services)
 
 ----------------------------	
