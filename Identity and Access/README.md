@@ -21,8 +21,12 @@ This authentication option requires a service provider to supply their public PG
 
 SSH authentication is only available for service providers integrating through Secure File Transfer Service SFTP.
 
+---------------
 ## Key Documentation 
 
+- Build pack 
+	- [Download the Identity and Access  build pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) to view authorisation and authentication details for the OAuth, M2M/JWT and SSH/PGP authorisation types
+	
 #### OAuth2 Authentication
 * [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
 * [Samples messages](./Message%20Samples.md) - requests and responses
@@ -30,8 +34,9 @@ SSH authentication is only available for service providers integrating through S
 
 #### OAuth2 and M2M Authentication	
 * [Manage access tokens for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/manage-access-tokens-for-gateway-services)
-	
-## Available authentication options for gateway services
+
+----------------------------	
+## Available authentication options for gateway services and file transfer services
 
 > M2M/JWT authentication is only available for service providers integrating through cloud services **and for some services as listed below**.
 
