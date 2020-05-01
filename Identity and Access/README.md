@@ -3,7 +3,7 @@
 
 # Identity and Access Services
 
-We provide 3 authentication options to access our with gateway services
+We provide 3 authentication options to access our with gateway services and secure file transfer services
 
 #### OAuth2 Authentication
 This authentication option is a authorisation token implementation using OAuth 2.0. Both cloud or native (desktop) application options 
