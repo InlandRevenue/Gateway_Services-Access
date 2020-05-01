@@ -23,15 +23,17 @@ SSH authentication is only available for service providers integrating through S
 
 ## Key Documentation 
 
+#### OAuth2 Authentication
+	* [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
+	* [Samples messages](./Message%20Samples.md) - requests and responses
+	* [Managing myIR logons for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/managing-myir-logons-for-gateway-services)
 
-* [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
-* [Samples messages](./Message%20Samples.md) - requests and responses
-* [Managing myIR logons for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/managing-myir-logons-for-gateway-services)
-* [Manage access tokens for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/manage-access-tokens-for-gateway-services)
+#### OAuth2 and M2M Authentication	
+	* [Manage access tokens for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/manage-access-tokens-for-gateway-services)
 	
 ## Available authentication options for gateway services
 
-M2M/JWT authentication is only available for service providers integrating through cloud services **and for some selected services as described in the table below**.
+> M2M/JWT authentication is only available for service providers integrating through cloud services **and for some services as listed below**.
 
 <table>
 	<thead>
