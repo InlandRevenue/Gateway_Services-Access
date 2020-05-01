@@ -10,13 +10,13 @@ This authentication option is a authorisation token implementation using OAuth 2
 are enforced for client applications and authenticate end users using their myIR user ID and password to grant consent to the application 
 access to their Inland Revenue information.
 
-#### Machine-to-Machine (M2M) authentication/Self-Signed JWT
+#### Machine-to-Machine (M2M) authentication / Self-Signed JWT
 This authentication option uses a client signed JSON Web Token (JWT) to sign messages, which lets us identify the service provider 
 or a customer of a service provider. 
 
 > M2M authentication is only available for service providers integrating through cloud services.
 
-#### SSH authentication
+#### SSH authentication / PGP Key
 This authentication option requires a service provider to supply their public PGP key for file encryption. We supply our public SSH key in order to gain access to the service provider FTP server.
 
 SSH authentication is only available for service providers integrating through Secure File Transfer Service SFTP.
@@ -38,7 +38,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 		<th>Service</th>
 		<th>OAuth2</th>
 		<th>M2M/JWT</th>
-		<th>SSH</th>
+		<th>SSH/PGP</th>
 	</thead>
 	<tbody>
 		<tr>
@@ -60,16 +60,19 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td>Investment income reporting</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Payday filing</td><td>Yes</td><td>No</td><td>No</td>
-		</tr>		
+			<td>Payday filing (EI) - Return Service</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
 		<tr>
-			<td>Push notifications</td><td>No</td><td>No</td><td>Yes</td>
+			<td>Payday filing (ED) - Employment Service</td><td>Yes</td><td>No</td><td>No</td>
+		</tr>
+		<tr>
+			<td>Return Status push notifications </td><td>No</td><td>No</td><td>Yes</td>
 		</tr>	
 		<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account" target="_blank">view services in this repository</a></td>	
 		</tr>	
 		<tr>
-			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Bill service</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
 			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
@@ -102,7 +105,7 @@ M2M/JWT authentication is only available for service providers integrating throu
 			<td  style="background-color:lightgrey" colspan=4> <strong>Transaction data services</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services" target="_blank">view services in this repository</a></td>	
 		</tr>
 				<tr>
-			<td>Transaction Data Services (SOAP)</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Transaction Data Services (Account and Transactions)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>		
 						<tr>
 			<td>Transaction data services (Secure FTP)</td><td>No</td><td>No</td><td>Yes</td>
