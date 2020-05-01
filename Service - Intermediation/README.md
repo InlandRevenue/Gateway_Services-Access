@@ -19,6 +19,7 @@ The Intermediation gateway service provides the ability for intermediaries to:
 - manage links to clients (link, delink and update) 
 - retrieve clients and client lists that are already established.
 
+--------------------
 ## Latest updates
 
 The following key changes have been made to the Intermediation service build pack
@@ -52,9 +53,9 @@ The following key changes have been made to the Intermediation service build pac
 
 ## Environment information
 
-- [Mock Environment Information](#Mock-environment-information)
-- [Test Environment Information](#Test-environment-information)
-- [Production Environment Information](#Production-environment-information)
+- [Mock environment information](#Mock-environment-information)
+- [Test environment information](#Test-environment-information)
+- [Production environment information](#Production-environment-information)
 
 ## Supporting services
 
