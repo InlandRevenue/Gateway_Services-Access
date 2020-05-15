@@ -85,6 +85,9 @@ This authentication option requires a service provider to supply their public PG
 			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
+			<td>IRD Number Validation service</td><td colspan=3>Only requires Mutual TLS</td>
+		</tr>
+		<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Communication</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Communication" target="_blank">view services in this repository</a></td>	
 		</tr>
 		<tr>
