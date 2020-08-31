@@ -52,7 +52,7 @@ Here’s each query parameter explained:
 * ```client_id```: The public identifier (ClientID) for the application which is obtained from the onboarding team. 
 * ```redirect_uri```: Tells the authorization server where to send the user back to after they approve the request.
 * ```scope```: ```MYIR.Services```, strings indicating which permissions the application is requesting. 
-* ```grant_type```: ```authorisation_code``` This tells the token endpoint that the application is using the Authorization Code grant type.
+* ```response_type```:```code```, Response type requested.
 * ```state```: **Recommended.** The software provider's application generates a random string and includes it in the request. It should then check that the same value is returned after the user authorises the app. 
 * ```logout```: **Optional.** To enable a user to use a different myIR login, setting the value to ```“true”``` will force the logout of any user currently logged in. This avoids having to close a browser or wait 15 minutes to timeout an existing user login. 
 This will force the re-display of the login page and request the input of a new myIR account to login. The value of ```“false”``` or absence of this 
@@ -99,7 +99,7 @@ Form Fields:
 
 * ```code```:  The application includes the authorization code it was given in the redirect.
 * ```redirect_uri```:  The URL must match exactly the redirect_uri passed to `/ms_oauth/oauth2/endpoints/oauthservice/authorize`
-* ```grant_type``` - This must be ```authorization_code```
+* ```grant_type```: This must be```authorisation_code``` This tells the token endpoint that the application is using the Authorization Code grant type.
 
 The HTTP Header must include a Authorization header: ```"Basic " + Base64Encode( ClientID + ':' + ClientSecret)```: 
 
