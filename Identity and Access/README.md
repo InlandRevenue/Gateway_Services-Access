@@ -80,7 +80,7 @@ This authentication option requires a service provider to supply their public PG
 			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account" target="_blank">view services in this repository</a></td>	
 		</tr>	
 		<tr>
-			<td>Bill service</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 		<tr>
 			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
