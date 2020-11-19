@@ -28,7 +28,8 @@ This authentication option requires a service provider to supply their public PG
 	- [Download the Identity and Access  build pack](Build%20pack%20-%20Identity%20and%20Access%20Services.pdf) to view authorisation and authentication details for the OAuth, M2M/JWT and SSH/PGP authorisation types
 	
 #### OAuth2 authentication
-* [How to Integrate](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
+* [How to Integrate - OAuth2](./OAuth%20Authentication%20-%20How%20to%20Integrate.md)
+* [How to Integrate - M2M JWT](./M2M%20JWT%20Authentication%20-%20How%20to%20Integrate.md)
 * [Samples messages](./Message%20Samples.md) - requests and responses
 * [Managing myIR logons for gateway services](https://www.ird.govt.nz/digital-service-providers/guides-and-docs/managing-myir-logons-for-gateway-services)
 
@@ -79,7 +80,7 @@ This authentication option requires a service provider to supply their public PG
 			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account" target="_blank">view services in this repository</a></td>	
 		</tr>	
 		<tr>
-			<td>Bill service</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 		<tr>
 			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
