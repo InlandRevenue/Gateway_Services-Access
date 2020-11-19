@@ -3,6 +3,10 @@
 
 # Message Samples - OAuth Requests and Responses
 
+#### 0Auth2 changes as of the 17th October 2020
+* The autorisration code (AuthZ Code) and refresh token will be a opaque string value (800-1000 in length).
+* Refresh Token never expires.  
+
 ##### Table of Contents
 * [URL EndPoint Parameter](#URLEndPointParameter) 
 * [Request Authorisation Code](#RequestAuthorisationCode)
@@ -18,7 +22,7 @@
 ## URL Endpoint Parameter:
 
 #### Parameters:
-```{ServiceHostDomain}```: this is IR's Gateway Service environment specific domain that is accessed after your endpoint IP / CIDR range is white-listed.
+```{ServiceHostDomain}```: this is IR's Gateway Service environment specific domain.
 
 |Environment |```{ServiceHostDomain}``` Hostname |
 |-|-|
@@ -80,7 +84,7 @@ If the user approves the request, the authorisation server will redirect the bro
 For example, the user will be redirected back to a URL such as:
 ```http
 https://mycompdomain.com/returnpath
- ?code=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXV...hrNZYDZbakOpz4uY6UlSSNECmw0ac8
+ ?code=T3BhcXVlVmFsdWVPcGFxdWVWYWx1ZU9wYXF1ZVZhbHVlT3BhcXVlVmFsdWVPcGFxdWVWYWx1ZU9wYXF1ZVZhbHVlT
  &state=2d0fcc2d-8f7a-4f27-8bea-976cb86bd409
 ```
 The ```state``` value will be the same value that the application initially set in the request. The application is expected to check that the state in the redirect matches the state it originally set. 
@@ -114,7 +118,7 @@ Content-Type: application/x-www-form-urlencoded
 Authorization: Basic eHl6Q29tcF9Gb29CYXI6Q2xpZW50U2VjcmV0UGFzc3dvcmQ= 
 
 redirect_uri=https://mycompdomain.com/returnpath
-&code=eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsIng1dCI6In...-VMbr_hrNZYDZbakOpz4uY6UlSSNECmw0ac8
+&code=T3BhcXVlVmFsdWVPcGFxdWVWYWx1ZU9wYXF1ZVZhbHVlT3BhcXVlVmFsdWVPcGFxdWVWYWx1ZU9wYXF1ZVZhbHVlT-VMbr_hrNZYDZbakOpz4uY6UlSSNECmw0ac8
 &grant_type=authorization_code
 ```
 
@@ -130,7 +134,7 @@ Content-Type: application/json
   "expires_in":28800,
   "token_type":"Bearer",
   "access_token":"MTQ0NjJkZmQ5OTM2...NDE1ZTZjNGZmZjI3",
-  "refresh_token":"IwOGYzYTlmM2YxOT...Q5MGE3YmNmMDFkNTVk"
+  "refresh_token":"T3BhcXVlVmFsdWVP...GFxdWVWYWx1ZU9wYX"
 }
 ```
 
@@ -201,7 +205,7 @@ Content-Type: application/json
    "expires_in": 28800,
    "token_type": "Bearer",
    "access_token": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsIng1d...CJWXfilfHJVuRchenyW4Lv8sVTKGPbQOQ",
-   "refresh_token": "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsIng1dCI6Ino...LWcOM33Htc9SHHOjglMNzyTl76-yq1F4TU3eueAG8",
+   "refresh_token": "T3BhcXVlVmFsdWVP...GFxdWVWYWx1ZU9wYX",
 }
 ```
 
@@ -221,8 +225,8 @@ Form Fields:
 * ```grant_type```: is ```oracle-idm:/oauth/grant-type/resource-access-token/jwt```
 * ```oracle_token_action```: is ```validate```
 * ```scope```: is ```MYIR.Services```  
-* ```assertion```: - _current access/refresh token_
-* ```oracle_token_attrs_retrieval```: is ```prn exp```
+* ```assertion```: - _current access token_
+* ```oracle_token_attrs_retrieval```: is ```startLogon exp```
 
 ### Example POST request to Validate a Access Token:
 
@@ -236,7 +240,7 @@ grant_type=oracle-idm:/oauth/grant-type/resource-access-token/jwt
 &oracle_token_action=validate
 &scope=MYIR.Services
 &assertion=eyJhbGciOiJSUzUxMiIsInR5cCI...S4SfeEm6s1iN46QldbunwYM
-&oracle_token_attrs_retrieval=prn exp
+&oracle_token_attrs_retrieval=startLogon exp
 ```
 
 ### Example of a successful response:
@@ -248,8 +252,8 @@ Content-Type: application/json
 {
    "successful": true,
    "oracle_token_attrs_retrieval": {
-      "exp": 1519367910,
-      "prn": "Client008"
+      "exp": 1604436119,
+      "startLogon": "Client008"
    }
 } 
 ```
@@ -263,7 +267,7 @@ Form Fields:
 
 * ```grant_type```: is ```oracle-idm/oauth/grant-type/resource-access-token/jwt```
 * ```oracle_token_action```:  is ```delete```
-* ```assertion```: - _current access/refresh token_  
+* ```assertion```: - _current access token_  
 
 ### Example POST request to Revoke an Access Token:
 
