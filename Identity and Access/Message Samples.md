@@ -103,7 +103,7 @@ Form Fields:
 
 * ```code```:  The application includes the authorization code it was given in the redirect.
 * ```redirect_uri```:  The URL must match exactly the redirect_uri passed to `/ms_oauth/oauth2/endpoints/oauthservice/authorize`
-* ```grant_type```: This must be```authorisation_code``` This tells the token endpoint that the application is using the Authorization Code grant type.
+* ```grant_type```: This must be```authorization_code``` This tells the token endpoint that the application is using the Authorization Code grant type.
 
 The HTTP Header must include a Authorization header: ```"Basic " + Base64Encode( ClientID + ':' + ClientSecret)```: 
 
