@@ -39,7 +39,7 @@ This authentication option requires a service provider to supply their public PG
 ----------------------------	
 ## Available authentication options for gateway services and file transfer services
 
-> M2M/JWT authentication is only available for service providers integrating through cloud services **and for some services as listed below**.
+> M2M/JWT authentication is only available for Digital Service Providers (DSP) integrating through cloud services **and for some services as listed below**.
 
 <table>
 	<thead>
@@ -53,55 +53,71 @@ This authentication option requires a service provider to supply their public PG
 			<td  style="background-color:lightgrey" colspan=4> <strong>Returns and Information</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Returns-and-Information" target="_blank">view services in this repository</a></td>	
 		</tr>
 		<tr>
-			<td>Accounting income method (AIM)</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Accounting Income Method (AIM)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Goods and services tax (GST)</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Goods and Services Tax (GST)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 		<tr>
-			<td>Donation tax credits</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Donation Tax Credits (REB)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Income Tax</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Income Tax (INC)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 		<tr>
-			<td>Investment income reporting</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Investment Income Reporting (AIL, DWT, IPS, NRT, PIE and RWT)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Payday filing (EI) - Return Service</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Payday Filing Return Service (EI)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Payday filing (ED) - Employment Service</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Payday Filing Employment Service (ED/ES) </td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 		<tr>
-			<td>Return Status push notifications </td><td>No</td><td>No</td><td>Yes</td>
+			<td>Return Status Push Notifications (Secure FTP)</td><td>No</td><td>No</td><td>Yes</td>
 		</tr>	
 		<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Customer and Account</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Customer-and-Account" target="_blank">view services in this repository</a></td>	
 		</tr>	
+        <tr>
+		    <td>Customer Service Suite:
+			   <ul>
+			   <li>Account API</li>
+			   <li>Address API</li>
+			   <li>Bank API</li>
+			   <li>Contact API</li>
+			   <li>Customer API</li>
+			   <li>Name API</li>
+			   <li>Period API</li>
+			   </ul>
+			</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>No</td>
+        </tr>
 		<tr>
-			<td>Bill service</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Bill API</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 		<tr>
-			<td>Income service</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Income API</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
-			<td>IRD Number Validation service</td><td colspan=3>Only requires Mutual TLS</td>
+			<td>IRD Number Validation API</td><td colspan=3>Only requires Mutual TLS</td>
 		</tr>
 		<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Communication</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Communication" target="_blank">view services in this repository</a></td>	
 		</tr>
 		<tr>
-			<td>Document service</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Document API</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 				<tr>
-			<td>Notifications service</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Notifications API</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>	
 		<tr>
 			<td style="background-color:lightgrey" colspan=4> <strong>Calculators</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Calculators" target="_blank">view services in this repository</a></td>	
 		</tr>	
 		<tr>
-			<td>Prescribed investor rate (PIR) calculator</td><td>Yes</td><td>Yes</td><td>No</td>
+			<td>Prescribed Investor Rate (PIR) calculator</td><td>No</td><td>Yes</td><td>No</td>
 		</tr>
 				<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Access</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Access" target="_blank">view services in this repository</a></td>	
@@ -110,16 +126,16 @@ This authentication option requires a service provider to supply their public PG
 			<td>Intermediation Service</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>
 				<tr>
-			<td>Software intermediation</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Software Intermediation Service</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>	
 				<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Transaction data services</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Transaction-data-services" target="_blank">view services in this repository</a></td>	
 		</tr>
 				<tr>
-			<td>Transaction Data Services (Account and Transactions)</td><td>Yes</td><td>No</td><td>No</td>
+			<td>Transaction Data Services (Account & Transactions SOAP Service)</td><td>Yes</td><td>No</td><td>No</td>
 		</tr>		
 						<tr>
-			<td>Transaction data services (Secure FTP)</td><td>No</td><td>No</td><td>Yes</td>
+			<td>Transaction Data Services (Secure FTP)</td><td>No</td><td>No</td><td>Yes</td>
 		</tr>
 	</tbody>
 </table>
