@@ -1,6 +1,7 @@
+![IRD logo](../Images/IRlogo.gif)
+![Software Dev](../Images/SoftwareDev.png)
 
 # Mutual Authentication and Cipher Supported  
-
 
 Currently all Gateway Services channel users sending messages to IR do so over a secure network connection. CNAMEs are exchanged during on-boarding and the public certifctes are used to connect to IR using a protocol known as mutual TLS (mTLS). This allows IR to identify the Digital Service Provider (DSP) sending the message and encrypts the message in transit. 
 Changes are being made to how we use these certificates, how we are allowing mTLS 1.3 as well as continuing support for 1.2, and as well as changes we'll be making to our cyphers. 
@@ -20,7 +21,7 @@ Of these, IR’s security gateways do not currently support the CCM mode of oper
 
 #### Your action and by when?
   
-* DSP’s that support only the TLS1.2 protocol are very unlikely to be affected by the enablement of TLS1.3, but IR urges DSPs in this position to begin investigating an upgrade path to support TLS 1.3 by 31 December 2022 (20+ Months). 
+* DSP’s that support only the TLS1.2 protocol are very unlikely to be affected by the enablement of TLS1.3, but IR urges DSPs in this position to begin investigating an upgrade path to support TLS 1.3 by 31 December 2022. 
 
 ##	Deprecating TLS 1.2 Ciphers - Changing 31 March and 31 December 2022
 
