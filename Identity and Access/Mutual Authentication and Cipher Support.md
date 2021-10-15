@@ -4,7 +4,10 @@
 # Mutual Authentication and Cipher Supported  
 
 Currently all Gateway Services channel users sending messages to IR do so over a secure network connection. CNAMEs are exchanged during on-boarding and the public certifctes are used to connect to IR using a protocol known as mutual TLS (mTLS). This allows IR to identify the Digital Service Provider (DSP) sending the message and encrypts the message in transit. 
+
 Changes are being made to how we use these certificates, how we are allowing mTLS 1.3 as well as continuing support for 1.2, and as well as changes we'll be making to our cyphers. 
+
+
 
 ## Enablement of TLS 1.3 (Changing 31 December 2022)
 
@@ -133,12 +136,13 @@ This means you will now need to ensure a CNAME is generated in the Developer Por
 ||SHA256 Thumbprint: `cb:b0:27:07:16:0f:4f:77:29:1a:27:56:14:48:69:1c:a5:90:18:08:e5:f3:6e:75:84:49:a8:62:aa:52:72:cb` |
 
 DSP subject CNAMEs will be assigned through the IR Developer Portal, and will use the DSP’s registered DNS domain, prefixed with a unique security identifier assigned by IR, for example: 
-* 0123456789abcdef.irdgws.yourdomainname.com, or 
-* 0123456789abcdef.irdgws.test.yourdomainname.com  
+* 0123456789abcdef.irdgws.yourdomainname.com or 
+* 0123456789abcdef.irdgws.test.yourdomainname.com or   
+* 0123456789abcdef.irdgws.prod.yourdomainname.com
 
-Your action and by when?
----
+### Your action and by when?
 
 > We implemented our changes on 26 May 2021, but this will only impact you when you next roll over/renew your X.509 certificate. Any certificates that have been pinned prior to removal of the upload capability will be supported for a remaining 12 months or until their date of expiry (whichever is earlier).
 
-**Please note:** Separate certificates will be required to access test and production environments. We request you only use this CNAME certificate for mTLS with IR and this certificate is not used for other messages exchanges or web sites you may have. IR advises deprecating the TLS 1.2 cyphers at the same time you change to CNAME certificates. IR will not accept new certificates for registration under the current pinning-based authentication method once the new trust-based model is implemented, the mTLS certificate upload capability has now been removed from the Developer Portal.  
+**Please note:** Separate certificates will be required to access test and production environments. We request you only use this CNAME certificate for mTLS with IR and this certificate is not used for other messages exchanges or web sites you may have. 
+IR advises deprecating the TLS 1.2 cyphers at the same time you change to CNAME certificates. IR will not accept new certificates for registration under the current pinning-based authentication method once the new trust-based model is implemented, the mTLS certificate upload capability has now been removed from the Developer Portal.  
