@@ -88,7 +88,7 @@ The following key changes have been made to the Intermediation service build pac
 ## Mock environment information:
 
 * Mock emulated services URL
-	* https://mock-int.ird.digitalpartner.services/
+	*  https://intermediation.test.services.ird.govt.nz/
 
 * Test scenarios
 	- Intermediation Information Test Scenarios Mindmap
