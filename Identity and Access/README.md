@@ -148,18 +148,18 @@ This authentication option requires a service provider to supply their public PG
 | --- | --- | --- | 
 | <ul><li> AIM</li><li>GST</li><li>Income Tax/Donation Tax Credits</li><li>Employment Information</li><li>Investment Income Reporting</li></ul> | Production |```http://services.ird.govt.nz:4046/gateway/gws/returns/```|
 | <ul><li> AIM</li><li>GST</li><li>Income Tax/Donation Tax Credits</li><li>Employment Information</li><li>Investment Income Reporting</li></ul> | Testing |```http://test5.services.ird.govt.nz:4046/gateway/gws/returns/```|
-| Employment Service | Production| ```http://services.ird.govt.nz:4046/gateway/gws/employemnt/```|  
-| Employment Service | Test | ```http://test5.services.ird.govt.nz:4046/gateway/gws/employemnt/```| 
-| Employment Service V2 |Production | ```http://services.ird.govt.nz:4046/gateway/gws/employemnt/v2/``` | 
-| Employment Service V2| Test| ```http://test5.services.ird.govt.nz:4046/gateway/gws/employemnt/v2/```| 
-| Intermediation | Test |```https://test5.services.ird.govt.nz:4046/secure/gateway/GWS/Intermediation/```|
-| Intermediation | Production | ```https://services.ird.govt.nz:4046/secure/gateway/GWS/Intermediation/```|
-| Software Intermediation | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/GWS/SoftwareIntermediation/``` |
-| Software Intermediation | Production | ```https://services.ird.govt.nz:4046/Gateway/GWS/SoftwareIntermediation/``` |
-| Account | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/GWS/Account/``` |
-| Account | Production | ```https://services.ird.govt.nz:4046/Gateway/GWS/Account/``` |
-| Transactions | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/GWS/Transactions/```|
-| Transactions | Production | ```https://services.ird.govt.nz:4046/Gateway/GWS/Transactions/```|
+| Employment Service | Production| ```http://services.ird.govt.nz:4046/gateway/gws/employment/```|  
+| Employment Service | Test | ```http://test5.services.ird.govt.nz:4046/gateway/gws/employment/```| 
+| Employment Service V2 |Production | ```http://services.ird.govt.nz:4046/gateway/gws/employment/v2/``` | 
+| Employment Service V2| Test| ```http://test5.services.ird.govt.nz:4046/gateway/gws/employment/v2/```| 
+| Intermediation | Test |```https://test5.services.ird.govt.nz:4046/secure/gateway/gws/intermediation/```|
+| Intermediation | Production | ```https://services.ird.govt.nz:4046/secure/gateway/gws/intermediation/```|
+| Software Intermediation | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
+| Software Intermediation | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
+| Account | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/account/``` |
+| Account | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/account/``` |
+| Transactions | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/transactions/```|
+| Transactions | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/transactions/```|
 
 
 	
@@ -167,10 +167,9 @@ This authentication option requires a service provider to supply their public PG
 ### Native Desktop	
 | Gateway Service | Environment | URL Endpoint | 
 | --- | --- | --- | 
-| <ul><li> AIM</li><li>GST</li><li>Income Tax</li><li>Employment Information</li><li>Investment Income Reporting</li></ul> | Production | ```http://services.ird.govt.nz/gateway2/gws/returns/``` |
 | <ul><li> AIM</li><li>GST</li><li>Income Tax</li><li>Employment Information</li><li>Investment Income Reporting</li></ul> | Testing | ```http://test5.services.ird.govt.nz/gateway2/gws/returns/``` |
-| Employment Service | Production|  ```http://services.ird.govt.nz/gateway2/gws/employemnt/```| 
-| Employment Service | Test |  ```http://test5.services.ird.govt.nz/gateway2/gws/employemnt/```| 
-| Employment Service V2 |Production |  ```http://services.ird.govt.nz/gateway2/gws/employemnt/v2/```| 
-| Employment Service V2| Test|  ```http://test5.services.ird.govt.nz/gateway2/gws/employemnt/v2/```| 	
-	
+| <ul><li> AIM</li><li>GST</li><li>Income Tax</li><li>Employment Information</li><li>Investment Income Reporting</li></ul> | Production | ```http://services.ird.govt.nz/gateway2/gws/returns/``` |
+| Employment Service | Test |  ```http://test5.services.ird.govt.nz/gateway2/gws/employment/```| 
+| Employment Service | Production|  ```http://services.ird.govt.nz/gateway2/gws/employment/```| 
+| Employment Service V2| Test|  ```http://test5.services.ird.govt.nz/gateway2/gws/employment/v2/```| 	
+| Employment Service V2 |Production |  ```http://services.ird.govt.nz/gateway2/gws/employment/v2/```| 	
