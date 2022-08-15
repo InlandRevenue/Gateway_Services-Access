@@ -85,6 +85,7 @@ This authentication option requires a service provider to supply their public PG
 			   <li>Account API</li>
 			   <li>Address API</li>
 			   <li>Bank API</li>
+			   <li>BIC API</li>
 			   <li>Contact API</li>
 			   <li>Customer API</li>
 			   <li>Name API</li>
@@ -117,7 +118,7 @@ This authentication option requires a service provider to supply their public PG
 			<td style="background-color:lightgrey" colspan=4> <strong>Calculators</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Calculators" target="_blank">view services in this repository</a></td>	
 		</tr>	
 		<tr>
-			<td>Prescribed Investor Rate (PIR) calculator</td><td>No</td><td>Yes</td><td>No</td>
+			<td>Prescribed Investor Rate (PIR) calculator</td><td>Yes</td><td>Yes</td><td>No</td>
 		</tr>
 				<tr>
 			<td  style="background-color:lightgrey" colspan=4> <strong>Access</strong> - <a href="https://github.com/InlandRevenue/Gateway_Services-Access" target="_blank">view services in this repository</a></td>	
@@ -156,13 +157,8 @@ This authentication option requires a service provider to supply their public PG
 | Intermediation | Production | ```https://services.ird.govt.nz:4046/secure/gateway/gws/intermediation/```|
 | Software Intermediation | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
 | Software Intermediation | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
-| Account | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/account/``` |
-| Account | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/account/``` |
-| Transactions | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/transactions/```|
-| Transactions | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/transactions/```|
-
-
-	
+| TDS Account | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/account/``` |
+| TDS Transactions | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/transactions/```|
 	
 ### Native Desktop	
 | Gateway Service | Environment | URL Endpoint | 
@@ -173,3 +169,23 @@ This authentication option requires a service provider to supply their public PG
 | Employment Service | Production|  ```https://services.ird.govt.nz/gateway2/gws/employment/```| 
 | Employment Service V2| Test|  ```https://test5.services.ird.govt.nz/gateway2/gws/employment/v2/```| 	
 | Employment Service V2 |Production |  ```https://services.ird.govt.nz/gateway2/gws/employment/v2/```| 	
+
+## URL endpoints for REST APIs 
+
+### Cloud
+| API | Environment | Base URL Endpoint |
+| --- | --- | --- | 
+| Account API | Production | ```https://services.ird.govt.nz:4046/gateway/account/```|
+| Address API | Production | ```https://services.ird.govt.nz:4046/gateway/address/```|
+| Bank API | Production | ```https://services.ird.govt.nz:4046/gateway/bank/```|
+| BIC API | Production | ```https://services.ird.govt.nz:4046/gateway/bic/``` |
+| Bill API | Production | ```https://services.ird.govt.nz:4046/gateway/bill/``` |
+| Contact API | Production | ```https://services.ird.govt.nz:4046/gateway/contact/``` |
+| Customer API | Production | ```https://services.ird.govt.nz:4046/gateway/customer/``` |
+| Document API | Production | ```https://services.ird.govt.nz:4046/gateway/document/``` |
+| Income API | Production | ```https://services.ird.govt.nz:4046/gateway/income/``` |
+| IRD Number Validation API | Production | ```https://services.ird.govt.nz:4046/gateway/customer-service/```|
+| Name API | Production | ```https://services.ird.govt.nz:4046/gateway/name/``` |
+| Notification API | Production | ```https://services.ird.govt.nz:4046/gateway/notification/``` |
+| Period API | Production | ```https://services.ird.govt.nz:4046/gateway/period/``` |
+| PIR Calculator API | Production | ```https://services.ird.govt.nz:4046/gateway/calculators/``` |
