@@ -3,10 +3,13 @@
 
 # Mutual Authentication and Cipher Supported  
 
-Currently all Gateway Services channel users sending messages to IR do so over a secure network connection. CNAMEs are exchanged during on-boarding and the public certifctes are used to connect to IR using a protocol known as mutual TLS (mTLS). This allows IR to identify the Digital Service Provider (DSP) sending the message and encrypts the message in transit. 
+Currently all Gateway Services channel users sending messages to IR do so over a secure network connection. The certifcate's Common Name (CN) are exchanged during on-boarding and the public certificates are used to connect to IR using a protocol known as mutual TLS (mTLS). This allows IR to identify the Digital Service Provider (DSP) sending the message and encrypts the message in transit. 
+
+The Common Name (CN), also known as the Fully Qualified Domain Name (FQDN), is the characteristic value within a Distinguished Name (DN). Typically, it is composed of Host Domain Name and looks like, "www.digicorp.com" or "digicorp.com".
 
 Changes are being made to how we use these certificates, how we are allowing mTLS 1.3 as well as continuing support for 1.2, and as well as changes we'll be making to our cyphers. 
 
+0## Enablement of TLS 1.3 (Changing 31 December 2022)
 0## Enablement of TLS 1.3 (Changing 31 December 2022)
 
 In addition to the TLS 1.2 protocol already offered, IR will also enable the newer TLS 1.3 protocol, which offers considerable improvements in both security and performance.
@@ -62,10 +65,10 @@ IR used a technique called certificate pinning to associate the expected certifi
 
 But this approach had the drawback that it precluded DSPs from automating certificate rollover and had a high operational cost for both DSPs and IR when managing renewed certificates.
 
-We have now adopted a more typical CA trust-based authentication model (utilising mTLS) so that any certificate that contains a pre-approved subject Common Name (CNAME) and is issued only by one of IR’s approved trusted root Certificate Authorities will be accepted. 
+We have now adopted a more typical CA trust-based authentication model (utilising mTLS) so that any certificate that contains a pre-approved Common Name (CN) and is issued only by one of IR’s approved trusted root Certificate Authorities will be accepted. 
 The change applies to both Test and Production environments
 
-This means you will now need to ensure a CNAME is generated in the Developer Portal and used as part of the process of ordering a certificate from the approved list of CA’s below:
+This means you will now need to ensure a Common Name is generated in the Developer Portal and used as part of the process of ordering a certificate from the approved list of CA’s below:
 
 * Amazon
 * Comodo
@@ -76,17 +79,17 @@ This means you will now need to ensure a CNAME is generated in the Developer Por
 * Sectigo
 * Thawte
 
-DSP subject CNAMEs will be assigned through the IR Developer Portal, and will use the DSP’s registered DNS domain, prefixed with a unique security identifier assigned by IR, for example:
+DSP Common Name will be assigned through the IR Developer Portal, and will use the DSP’s registered DNS domain, prefixed with a unique security identifier assigned by IR, for example:
 
-* 0123456789abcdef.irdgws.yourdomainname.com or
-* 0123456789abcdef.irdgws.test.yourdomainname.com or
-* 0123456789abcdef.irdgws.prod.yourdomainname.com
+* 298f9c17bbbe48958994982c383c409c.irdgws.yourdomainname.com or
+* 298f9c17bbbe48958994982c383c409c.irdgws.test.yourdomainname.com or
+* 298f9c17bbbe48958994982c383c409c.irdgws.prod.yourdomainname.com
 
-> NOTE: The assigned CNAME has to match exactly with your certifcate and what is loaded on our systems.  
+> NOTE: The assigned Common Name has to match exactly with your certifcate and what is loaded on our systems.  
 
 ### Your action and by when?
 
 > We implemented our changes on 26 May 2021, but this will only impact you when you next roll over/renew your X.509 certificate. Any certificates that have been pinned prior to removal of the upload capability will be supported for a remaining 12 months or until their date of expiry (whichever is earlier).
 
-**Please note:** Separate certificates will be required to access test and production environments. We request you only use this CNAME certificate for mTLS with IR and this certificate is not used for other messages exchanges or web sites you may have.
-IR advises deprecating the TLS 1.2 cyphers at the same time you change to CNAME certificates. IR will not accept new certificates for registration under the current pinning-based authentication method once the new trust-based model is implemented, the mTLS certificate upload capability has now been removed from the Developer Portal.  
+**Please note:** Separate certificates will be required to access test and production environments. We request you only use this Common Name certificate for mTLS with IR and this certificate is not used for other messages exchanges or web sites you may have.
+IR advises deprecating the TLS 1.2 cyphers at the same time you change to Common Name certificates. IR will not accept new certificates for registration under the current pinning-based authentication method once the new trust-based model is implemented, the mTLS certificate upload capability has now been removed from the Developer Portal.  
