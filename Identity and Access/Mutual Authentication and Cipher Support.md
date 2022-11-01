@@ -9,8 +9,7 @@ The Common Name (CN), also known as the Fully Qualified Domain Name (FQDN), is t
 
 Changes are being made to how we use these certificates, how we are allowing mTLS 1.3 as well as continuing support for 1.2, and as well as changes we'll be making to our cyphers. 
 
-0## Enablement of TLS 1.3 (Changing 31 December 2022)
-0## Enablement of TLS 1.3 (Changing 31 December 2022)
+## Enablement of TLS 1.3 (Changing 31 December 2022)
 
 In addition to the TLS 1.2 protocol already offered, IR will also enable the newer TLS 1.3 protocol, which offers considerable improvements in both security and performance.
 
