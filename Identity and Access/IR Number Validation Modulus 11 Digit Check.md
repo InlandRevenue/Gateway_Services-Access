@@ -41,7 +41,7 @@ is 0.
 + If the remainder is not 0 then subtract the remainder from 11, giving the 
 00 calculated check digit. 
 + If the calculated check digit is 10, the IRD number is invalid.
-5. Compare the check digit:
+#### 5. Compare the check digit:
 + Compare the calculated check digit to the last digit of the original IRD 
 number. 
 If they match, the IRD number is valid.
