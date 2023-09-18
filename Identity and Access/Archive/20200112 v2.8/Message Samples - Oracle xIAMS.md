@@ -28,7 +28,7 @@
 |Environment |```{ServiceHostDomain}``` Hostname |
 |-|-|
 | Mock (DPS) | ```https://mock-oauth.ird.digitalpartner.services``` |
-| Test (DTE) | ```https://test4.services.ird.govt.nz``` |
+| Test (DTE) | ```https://test5.services.ird.govt.nz``` |
 | Production | ```https://services.ird.govt.nz```  |
 
 >Note:
@@ -138,6 +138,7 @@ Content-Type: application/json
   "refresh_token":"T3BhcXVlVmFsdWVP...GFxdWVWYWx1ZU9wYX"
 }
 ```
+
 
 ### Example of a failed token exchange:
 ```http

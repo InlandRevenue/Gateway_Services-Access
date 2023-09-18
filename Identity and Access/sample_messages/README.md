@@ -157,6 +157,8 @@ This authentication option requires a service provider to supply their public PG
 | Intermediation | Production | ```https://services.ird.govt.nz:4046/secure/gateway/gws/intermediation/```|
 | Software Intermediation | Test | ```https://test5.services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
 | Software Intermediation | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/softwareintermediation/``` |
+| TDS Account | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/account/``` |
+| TDS Transactions | Production | ```https://services.ird.govt.nz:4046/Gateway/gws/transactions/```|
 	
 ### Native Desktop	
 | Gateway Service | Environment | URL Endpoint | 
@@ -187,6 +189,3 @@ This authentication option requires a service provider to supply their public PG
 | Notification API | Production | ```https://services.ird.govt.nz:4046/gateway/notification/``` |
 | Period API | Production | ```https://services.ird.govt.nz:4046/gateway/period/``` |
 | PIR Calculator API | Production | ```https://services.ird.govt.nz:4046/gateway/calculators/``` |
-| TDS API| Test | ```https://test5.services.ird.govt.nz:4046/gateway/tds/```|
-| TDS API | Production | ```https://services.ird.govt.nz:4046/gateway/tds/```|
-
