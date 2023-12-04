@@ -1,49 +1,45 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
-    <env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
-        <wsa:Action env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Intermediation/Intermediation/RetrieveClientResponse</wsa:Action>
-    </env:Header>
-    <env:Body>
-        <int:RetrieveClientResponse xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" 
-            xmlns:ret="https://services.ird.govt.nz/GWS/Intermediation/:types/RetrieveClientResponse" 
-            xmlns:int1="urn:www.ird.govt.nz/GWS:types/Intermediation.v1" 
-            xmlns:int="https://services.ird.govt.nz/GWS/Intermediation/">
-            <int:RetrieveClientResult>
-                <ret:RetrieveClientResponseWrapper>
-                    <int1:retrieveClientResponse>
-                        <com:statusMessage>
-                            <com:statusCode>0</com:statusCode>
-                            <com:errorMessage/>
-                        </com:statusMessage>
-                        <int1:clientID IdentifierValueType="ACCIRD">077415807</int1:clientID>
-                        <int1:link clientAccount="EMP">
-                            <int1:clientListID IdentifierValueType="LSTID">132261660</int1:clientListID>
-                            <int1:redirectMail>false</int1:redirectMail>
-                            <int1:redirectDisbursements>false</int1:redirectDisbursements>
-                        </int1:link>
-                        <int1:link clientAccount="EMP">
-                            <int1:clientListID IdentifierValueType="LSTID">132280722</int1:clientListID>
-                            <int1:redirectMail>true</int1:redirectMail>
-                            <int1:redirectDisbursements>false</int1:redirectDisbursements>
-                        </int1:link>
-                        <int1:link clientAccount="EMP">
-                            <int1:clientListID IdentifierValueType="CLTLID">1039039</int1:clientListID>
-                            <int1:redirectMail>false</int1:redirectMail>
-                            <int1:redirectDisbursements>false</int1:redirectDisbursements>
-                        </int1:link>
-                        <int1:link clientAccount="EMP">
-                            <int1:clientListID IdentifierValueType="CLTLID">1089042</int1:clientListID>
-                            <int1:redirectMail>false</int1:redirectMail>
-                            <int1:redirectDisbursements>false</int1:redirectDisbursements>
-                        </int1:link>
-                        <int1:link clientAccount="EMP">
-                            <int1:clientListID IdentifierValueType="CLTLID">1039040</int1:clientListID>
-                            <int1:redirectMail>false</int1:redirectMail>
-                            <int1:redirectDisbursements>false</int1:redirectDisbursements>
-                        </int1:link>
-                    </int1:retrieveClientResponse>
-                </ret:RetrieveClientResponseWrapper>
-            </int:RetrieveClientResult>
-        </int:RetrieveClientResponse>
-    </env:Body>
-</env:Envelope>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <s:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Action xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="1">https://services.ird.govt.nz/GWS/Intermediation/Intermediation/RetrieveClientResponse</wsa:Action>
+    </s:Header>
+    <s:Body>
+        <RetrieveClientResponse xmlns="https://services.ird.govt.nz/GWS/Intermediation/">
+            <RetrieveClientResult xmlns:d4p1="https://services.ird.govt.nz/GWS/Intermediation/:types/RetrieveClientResponse">
+                <d4p1:RetrieveClientResponseWrapper>
+                    <retrieveClientResponse xmlns="urn:www.ird.govt.nz/GWS:types/Intermediation.v1">
+                        <statusMessage xmlns="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                            <statusCode>0</statusCode>
+                            <errorMessage/>
+                        </statusMessage>
+                        <clientID IdentifierValueType="ACCIRD">077415807</clientID>
+                        <link clientAccount="EMP">
+                            <clientListID IdentifierValueType="LSTID">132261660</clientListID>
+                            <redirectMail>false</redirectMail>
+                            <redirectDisbursements>false</redirectDisbursements>
+                        </link>
+                        <link clientAccount="EMP">
+                            <clientListID IdentifierValueType="LSTID">132280722</clientListID>
+                            <redirectMail>true</redirectMail>
+                            <redirectDisbursements>true</redirectDisbursements>
+                        </link>
+                        <link clientAccount="EMP">
+                            <clientListID IdentifierValueType="CLTLID">1039039</clientListID>
+                            <redirectMail>false</redirectMail>
+                            <redirectDisbursements>false</redirectDisbursements>
+                        </link>
+                        <link clientAccount="EMP">
+                            <clientListID IdentifierValueType="CLTLID">1089042</clientListID>
+                            <redirectMail>false</redirectMail>
+                            <redirectDisbursements>false</redirectDisbursements>
+                        </link>
+                        <link clientAccount="EMP">
+                            <clientListID IdentifierValueType="CLTLID">1039040</clientListID>
+                            <redirectMail>false</redirectMail>
+                            <redirectDisbursements>false</redirectDisbursements>
+                        </link>
+                    </retrieveClientResponse>
+                </d4p1:RetrieveClientResponseWrapper>
+            </RetrieveClientResult>
+        </RetrieveClientResponse>
+    </s:Body>
+</s:Envelope>

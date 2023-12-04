@@ -3,19 +3,16 @@
       <wsa:Action xmlns:wsa="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Intermediation/Intermediation/Link</wsa:Action>
    </soap:Header>
    <soap:Body>
-      <int:Link xmlns:int="https://services.ird.govt.nz/GWS/Intermediation/" 
-         xmlns:int1="urn:www.ird.govt.nz/GWS:types/Intermediation.v1" 
-         xmlns:lin="https://services.ird.govt.nz/GWS/Intermediation/:types/LinkRequest" 
-         xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2">
+      <int:Link xmlns:int="https://services.ird.govt.nz/GWS/Intermediation/">
          <int:LinkRequestMsg>
-            <lin:LinkRequestWrapper>
-               <int1:linkRequest>
-                  <cmn:softwareProviderData>
-                     <cmn:softwareProvider>Software Provider</cmn:softwareProvider>
-                     <cmn:softwarePlatform>Software_Platform</cmn:softwarePlatform>
-                     <cmn:softwareRelease>1.0</cmn:softwareRelease>
-                  </cmn:softwareProviderData>
-                  <cmn:identifier IdentifierValueType="IRD">132261132</cmn:identifier>
+            <lin:LinkRequestWrapper xmlns:lin="https://services.ird.govt.nz/GWS/Intermediation/:types/LinkRequest">
+               <int1:linkRequest xmlns:int1="urn:www.ird.govt.nz/GWS:types/Intermediation.v1">
+                  <com:softwareProviderData xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                     <com:softwareProvider>softwareProvider</com:softwareProvider>
+                     <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
+                     <com:softwareRelease>1.0</com:softwareRelease>
+                  </com:softwareProviderData>
+                  <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" IdentifierValueType="IRD">132261132</com:identifier>
                   <int1:clientListID IdentifierValueType="LSTID">132261555</int1:clientListID>
                   <int1:target>
                      <int1:clientID IdentifierValueType="ACCIRD">132260958</int1:clientID>

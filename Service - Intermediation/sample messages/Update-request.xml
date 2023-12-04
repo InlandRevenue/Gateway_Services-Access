@@ -3,25 +3,22 @@
       <wsa:Action xmlns:wsa="http://www.w3.org/2005/08/addressing">https://services.ird.govt.nz/GWS/Intermediation/Intermediation/Update</wsa:Action>
    </soap:Header>
    <soap:Body>
-      <int:Update xmlns:int="https://services.ird.govt.nz/GWS/Intermediation/" 
-         xmlns:cmn="urn:www.ird.govt.nz/GWS:types/Common.v2" 
-         xmlns:upd="https://services.ird.govt.nz/GWS/Intermediation/:types/UpdateRequest" 
-         xmlns:int1="urn:www.ird.govt.nz/GWS:types/Intermediation.v1">
+      <int:Update xmlns:int="https://services.ird.govt.nz/GWS/Intermediation/">
          <int:UpdateRequestMsg>
-            <upd:UpdateRequestWrapper >
-               <int1:updateRequest >
-                  <cmn:softwareProviderData>
-                     <cmn:softwareProvider>Software Provider</cmn:softwareProvider>
-                     <cmn:softwarePlatform>Software_Platform</cmn:softwarePlatform>
-                     <cmn:softwareRelease>1.0</cmn:softwareRelease>
-                  </cmn:softwareProviderData>
-                  <cmn:identifier IdentifierValueType="IRD">132261132</cmn:identifier>
+            <upd:UpdateRequestWrapper xmlns:upd="https://services.ird.govt.nz/GWS/Intermediation/:types/UpdateRequest">
+               <int1:updateRequest xmlns:int1="urn:www.ird.govt.nz/GWS:types/Intermediation.v1">
+                  <com:softwareProviderData xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2">
+                     <com:softwareProvider>softwareProvider</com:softwareProvider>
+                     <com:softwarePlatform>softwarePlatform</com:softwarePlatform>
+                     <com:softwareRelease>1.0</com:softwareRelease>
+                  </com:softwareProviderData>
+                  <com:identifier xmlns:com="urn:www.ird.govt.nz/GWS:types/Common.v2" IdentifierValueType="IRD">132261132</com:identifier>
                   <int1:clientListID IdentifierValueType="LSTID">132261132</int1:clientListID>
                   <int1:target>
                      <int1:clientID IdentifierValueType="ACCIRD">132260737</int1:clientID>
-                     <int1:clientAccountType>EMP</int1:clientAccountType>
+                     <int1:clientAccountType>AIL</int1:clientAccountType>
                   </int1:target>
-                  <int1:redirectDisbursements>true</int1:redirectDisbursements>
+                  <int1:redirectDisbursements>false</int1:redirectDisbursements>
                   <int1:updateCustomerMaster>false</int1:updateCustomerMaster>
                   <int1:newClientListID IdentifierValueType="LSTID">132261555</int1:newClientListID>
                </int1:updateRequest>

@@ -18,13 +18,13 @@ To support this, the following Test environments will be moving all IR to ECC (e
 
 We will be only supporting the ciphers listed below:
 
- |TLS Version |	IANA Cipher Name |OpenSSL Cipher Name| Key Exchange| Authenication | Encryption | Hash |
+ |TLS Version |	IANA Cipher Name |OpenSSL Cipher Name| Key Exchange| Authentication | Encryption | Hash |
  | --- | --- | --- | --- | --- |--- | --- |
 | TLS1.3| TLS_AES_256_GCM_SHA384 | TLS_AES_256_GCM_SHA384  |-|-| Advanced Encryption Standard with 256bit key in Galois/Counter mode (AES 256 GCM)| SHA384|
 | TLS1.3| TLS_AES_128_GCM_SHA256	| TLS_AES_128_GCM_SHA256 |-|-|Advanced Encryption Standard with 128bit key in Galois/Counter mode (AES 128 GCM) | SHA256 |
 | TLS1.3| TLS_CHACHA20_POLY1305_SHA256	| TLS_CHACHA20_POLY1305_SHA256 |-|-|ChaCha stream cipher and Poly1305 authenticator (CHACHA20 POLY1305)| SHA256 |
-| TLS1.2|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 |	ECDH-ECDSA-AES256-GCM-SHA384 | Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) | Elliptic Curve Digital Signature Algorithm (ECDSA)|Advanced Encryption Standard with 256bit key in Galois/Counter mode (AES 256 GCM)| SHA384|
-| TLS1.2|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256	| ECDH-ECDSA-AES128-GCM-SHA256 | Elliptic Curve Diffie-Hellman Ephemeral (ECDHE)| Elliptic Curve Digital Signature Algorithm (ECDSA)|Advanced Encryption Standard with 128bit key in Galois/Counter mode (AES 128 GCM)| SHA256|
+| TLS1.2|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 |	ECDHE-ECDSA-AES256-GCM-SHA384 | Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) | Elliptic Curve Digital Signature Algorithm (ECDSA)|Advanced Encryption Standard with 256bit key in Galois/Counter mode (AES 256 GCM)| SHA384|
+| TLS1.2|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256	| ECDHE-ECDSA-AES128-GCM-SHA256 | Elliptic Curve Diffie-Hellman Ephemeral (ECDHE)| Elliptic Curve Digital Signature Algorithm (ECDSA)|Advanced Encryption Standard with 128bit key in Galois/Counter mode (AES 128 GCM)| SHA256|
 | TLS1.2|TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256	| ECDHE-ECDSA-CHACHA20-POLY1305 | Elliptic Curve Diffie-Hellman Ephemeral (ECDHE)|Elliptic Curve Digital Signature Algorithm (ECDSA)|ChaCha stream cipher and Poly1305 authenticator (CHACHA20 POLY1305)| SHA256|
 
 
