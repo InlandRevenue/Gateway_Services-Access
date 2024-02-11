@@ -142,9 +142,8 @@ The following key changes have been made to the Intermediation service build pac
 * Test environment URL endpoints
 
 	* Cloud gateway service: https://test5.services.ird.govt.nz:4046/gateway/gws/intermediation/
-	* Native desktop gateway Service: https://test5.services.ird.govt.nz/gateway2/gws/intermediation/
 	* Cloud SOAP WSDL: https://test5.services.ird.govt.nz:4046/gateway/gws/intermediation/?wsdl
-	* Native desktop SOAP WSDL: https://test5.services.ird.govt.nz/gateway2/gws/intermediation/?wsdl
+	
 
 -----------------
 ## Production environment information:
@@ -152,6 +151,5 @@ The following key changes have been made to the Intermediation service build pac
 * Production URL endpoints
 
 	- Cloud gateway service: https://services.ird.govt.nz:4046/gateway/gws/intermediation/
-	- Native desktop gateway service: https://services.ird.govt.nz/gateway2/gws/intermediation/
 	- Cloud SOAP WSDL: https://services.ird.govt.nz:4046/gateway/gws/intermediation/?wsdl
-	- Native desktop SOAP WSDL: https://services.ird.govt.nz/gateway2/gws/intermediation/?wsdl
+	
